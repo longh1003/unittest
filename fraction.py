@@ -50,4 +50,7 @@ def divide_fractions(frac1: tuple, frac2: tuple) -> tuple:
     return simplify(numerator, denominator)
 
 
-
+def divide_by_zero(a, b):
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
